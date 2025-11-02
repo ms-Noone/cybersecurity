@@ -18,4 +18,6 @@
 🤝 Let’s Connect  
 I’m always open to learning from others and connecting with cybersecurity professionals!  
 💼 **LinkedIn:** www.linkedin.com/in/nurainmohdaffandi  
-📧 **Email:** ainaffandi@gmail.com
+📧 **Email:** ainaffandi@gmail.com  
+
+⭐ *Thanks for visiting my portfolio! Follow my journey as I continue learning and building hands-on cybersecurity projects.*   

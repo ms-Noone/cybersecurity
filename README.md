@@ -11,7 +11,7 @@
 ---
 ## 📜 Certifications in Progress
 + CompTIA Linux+ (Completed : Credential ID **COMP001022829620**)
-+ CompTIA Security+ (in progress)
++ CompTIA Security+ (Completed : Credential ID **COMP001022829620**
 + ISTQB Certified Tester, Foundation Level (Completed : Credential ID **MY0076-13**)
 ---
 ## 🤝 Let’s Connect

@@ -4,7 +4,7 @@
 ## 🧭 Learning Roadmap
 ---
 ## ⚙️ Current Focus
-[] TryHackMe - CyberSecurity101
+- [ ] TryHackMe - CyberSecurity101
 ---
 ## 🧰 Tools I'm Learning
 ---

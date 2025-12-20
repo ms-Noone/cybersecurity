@@ -4,10 +4,9 @@
 ## 🧭 Learning Roadmap
 ---
 ## ⚙️ Current Focus
+[] TryHackMe - CyberSecurity101
 ---
 ## 🧰 Tools I'm Learning
----
-## 🚀 Featured Projects
 ---
 ## 📜 Certifications in Progress
 + CompTIA Linux+ (Completed : Credential ID **COMP001022829620**)

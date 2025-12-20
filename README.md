@@ -1,5 +1,5 @@
 # 👋 Hi, I'm Ms Noone (Nurain M.Affandi)
-###On a journey from home management to cyber defense, exploring cybersecurity to build new skills
+### On a journey from home management to cyber defense, exploring cybersecurity to build new skills
 ---
 
 ## 🧭 Learning Roadmap

@@ -44,7 +44,7 @@ WHOIS reveals ownership and contact details of domains, making it useful for inv
 
 ## 📝 Task 4: HTTP(S) – Accessing the web
 **Process:**  
-  - Used telnet to connect to webserver : telnet MACHINE_IP 80
+  - Used telnet to connect to webserver : `telnet MACHINE_IP 80`
   - Retrieve the hidden flag by accessing the flag.html :  
 	`GET /flag.html HTTP/1.1`  
 	`Host : Anything`

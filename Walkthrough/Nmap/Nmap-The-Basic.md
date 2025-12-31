@@ -26,3 +26,21 @@ This room provide a hands-on introduction to the NMAP network scanner. The objec
 
 **Reflection:**  
 Nmap is a powerful tool for quickly enumerating devices on a network. Host discovery is often the first step in network reconnaissance, making it essential for both troubleshooting and security assessments
+
+## Task 3: Port Scanning - Who is Listening
+**Process:**  
+  - Ran `nmap -sT 10.49.175.47` to enumerate active port on target
+	<img width="631" height="250" alt="port-scanning" src="https://github.com/user-attachments/assets/e2c5f501-91f0-440a-843d-97d9a5a13872" />
+	
+**Key Concepts:** 
+
+  - Port scanning can be perform either by using Connect Scan or Syn Scan (Stealth)  
+  - Connect Scan (-sT) : NMAP attempts to complete three-way TCP handshake with each target TCP Port. This method is reliable but easier to be detected.  
+  - Syn Scan (-sS) : NMAP send only the initial SYN packet without completing the handshake. This approach is faster and less likely to be logged  
+	
+**<ins>Command Examples:</ins>**  
+`nmap -sT 10.49.175.47`       # TCP connect scan - complete three-way handshake  
+`nmap -sS 10.49.175.47`    # TCP Syn - Initiate handshake without completion  
+
+**Reflection:**   
+Port scanning is a critical step in network reconnaissance. By identifying which ports are open and listening, analysts can determine potential entry points into a system and assess its exposure to threats.

@@ -13,5 +13,5 @@ Each walkthrough is written in clear, structured Markdown with:
 | Topic | No of Room | Completed Room  | Walkthrough |
 | ------------- | ------------- | ------------- | ------------- |
 | Networking  | 7 | 3  | [Networking](https://github.com/ms-Noone/cybersecurity-portfolio/tree/main/Cyber-Security-101/Networking) | 
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| NMAP  | Content Cell  | Content Cell  | Content Cell  |
 

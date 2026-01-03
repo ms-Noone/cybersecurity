@@ -4,7 +4,7 @@ This cheat sheet was created to capture useful commands for quick future referen
 | Feature | Syntax | Example Command  | Description |
 | ------------- | ------------- | ------------- | ------------- |
 | Host Discovery | -sn | `nmap -sn IP` | Discover live host without probing services |
-| Host Discovery | -sL | `nmap -sL IP` | List live host without scanning |
+| Host Discovery | -sL | `nmap -sL IP` | Enumerate live host without scanning |
 | Port Scanning | -sT | `nmap -sT IP` | TCP Connect scan by complete full handshake |
 | Port Scanning | -sS | `nmap -sS IP` | TCP Syn scan |
 | Port Scanning | -sU | `nmap -sU IP` | UDP scan |

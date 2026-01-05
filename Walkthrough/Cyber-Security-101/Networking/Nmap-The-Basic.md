@@ -49,8 +49,8 @@ Identified 4 legacy services (Echo, Discard, Daytime and QOTD). Outdated service
 
 **Result:**  
 Detected 3 outdated services and legacy OS : 
-- LANDesk remote management  → Often targeted for privilege escalation
-- lighttpd 1.4.74 → outdated web server, potential for web exploitation
+- LANDesk remote management  → linked to [CVE-2010-2892](https://www.cvedetails.com/cve/CVE-2010-2892/)
+- lighttpd 1.4.74 → outdated web server
 - OpenSSH 9.6p1 Ubuntu 3Ubuntu13.5 → linked to [CVE-2024-6387](https://ubuntu.com/security/cve-2024-6387)
 - Linux kernel 4.15 → linked [Vulnerability](https://www.cvedetails.com/version/565008/Linux-Linux-Kernel-4.15.html)
 	

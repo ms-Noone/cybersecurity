@@ -59,37 +59,33 @@ Version detection identified outdated and vulnerable services that expand the sy
  
 
 ## 📝Task 5: Timing - How Fast is Fast  
-**Overview:**  
-Timing controls are critical because scan speed can influence detection by Intrusion Detection Systems (IDS) or other security solutions.
+**Concepts Learned:**  
+NMAP provides timing templates that can control scan speed and stealth  
+| Timing | Use Case | SOC Impact |  
+|--------|----------|------------|  
+| T0 (Paranoid) | Extremely slow | Avoids detection, impractical for large scans |  
+| T1 (Sneaky)   | Very slow | Minimizes IDS alerts |  
+| T3 (Normal)   | Default | Balanced speed vs detection risk |  
+| T4 (Aggressive) | Fast | Useful internally, may trigger alerts |  
+| T5 (Insane)   | Very fast | Likely detected, for troubleshooting only | 
 
-**Key Concepts:**  
-  - NMAP at default speed may trigger alerts in IDS or other security solution  
-  - To avoid been detect, NMAP provide timing templates (T0 - T5)  
-    | Timing  | Description |
-	| ------------- | ------------- |
-	| T0 (paranoid) |	Extremely slow, designed to avoid detection |
-	| T1 (sneaky) |	Very slow, minimizes IDS alerts |
-	| T2 (Polite) |	Slows down to reduce network load |
-	| T3 (Normal) |	Default speed, balanced |
-	| T4 (Aggressive) |	Faster scans, may trigger detection |
-	| T5 (Insane) |	Very fast, likely to be detected |
-
+**Application example:**  
+Used -T0 or -T1 to evade from detection during reconnaisance, Analyst can also apply these template to test the specific firewall rule and observe how different speed affect IDS/IPS responses
 
 ## 📝Task 6: Output – Controlling What You See
-**Overview:**  
-Output control is essential for monitoring scan progress, troubleshooting, and saving results for later analysis.
-
-**Key Concepts:**  
-  - Verbosity (-v) :  Provide real-time details about scan progress. With this option, Analyst can observe how NMAP transition through different stages such as ARP Ping scan, DNS resolution & TCP Syn attempt on each open port  
-  - Debugging (-d) : useful for troubleshooting when NMAP not behaving as expected (intended for developer)
-  - Saving Scan Reports: Nmap supports multiple output formats:
+**Concepts Learned:**  
+  - NMAP provides switches that help to Analyst to control scan output
     | Option  | Description |
 	| ------------- | ------------- |
-	| -oN filename |	Normal Output |
-	| -oX filename |	XML Output |
-	| -oG filename |	grep-able output |
-	| -oA filename |	output in all major format (.nmap, .gnamp, .xml) |
-	
+	| -v | Provide real-time details about scan progress |
+    | -d | Useful for troubleshooting when NMAP not behaving as expected (intended for developer) |
+	| -oN filename |	Save Scan Report to Normal Output |
+	| -oX filename |	Save Scan Report to XML Output |
+	| -oG filename |	Save Scan Report to grep-able output |
+	| -oA filename |	Save Scan Report to output in all major format (.nmap, .gnamp, .xml) |
+
+**Application example:**  
+Using the -v option helps analyst gain real-time visibility of scan process, this is valuable during long or complex scan.The `-oA` option is valuable for saving results in multiple formats, supporting incident documentation and further analysis in SOC workflows.
 
 ## 📝 Key Takeways
 NMAP is one of the most widely used tools in Reconnaissance, exploring its feature help me to understand how analysts can enumerate targets, identify services, and assess potential vulnerabilities. This knowledge strengthens defensive strategies and prepares me for real‑world SOC analyst responsibilities.  

@@ -3,8 +3,6 @@
 Room : [NMAP The Basic](https://tryhackme.com/room/nmap)  
 Date Completed: Dec 31, 2025  
 Category: Networking  
-Difficulty: Easy  
-Estimated Time: ~60 minutes  
 Focus Areas: NMAP  
 
 ## 📝 Overview

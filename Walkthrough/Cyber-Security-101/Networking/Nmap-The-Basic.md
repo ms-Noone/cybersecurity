@@ -30,7 +30,7 @@ Enumerating device is the first step in network reconnaisance. This process help
 <img width="631" height="250" alt="port-scanning" src="https://github.com/user-attachments/assets/e2c5f501-91f0-440a-843d-97d9a5a13872" />
 	
 **Result:**  
-Found 6 open ports: 7 (ECHO), 9 (Discard), 13 (Daytime), 17(QOTD) , 22 (SSH), 8008 (HTTP)
+Found **6 open ports**: 7 (ECHO), 9 (Discard), 13 (Daytime), 17(QOTD) , 22 (SSH), 8008 (HTTP)
 	
 **Analysis:**  
 Identified 4 legacy services (Echo, Discard, Daytime and QOTD). Outdated services increase the system's attack surface and may serve as entry point for DOS or reflection attacks
@@ -38,19 +38,25 @@ Identified 4 legacy services (Echo, Discard, Daytime and QOTD). Outdated service
 
 
 ## 📝Task 4: Version Detection – Extract More Information##  
-**Process:**  
-  - Ran `nmap -sS -sV 10.48.153.79` to identify open port and detect the versions of service version 
-	<img width="840" height="191" alt="Version-detection" src="https://github.com/user-attachments/assets/b79acb8b-a9e9-49da-9bed-39e889e89d23" />
+**<ins>Command:</ins>**  
+`nmap -sS -sV 10.48.153.79` #TCP Syn with Service version detection
 
-**Key Concepts:**  
-  - OS Detection (-O): Attempts to fingerprint the operating system running on the target.
-  - Service Version Detection (-sV): Nmap probes open ports to determine the software and version associated with each service.
-  - Combining port scanning with -sV provide deeper insight into service bound to ports, such as http, ssh daemon and etc
+<img width="861" height="215" alt="Version-detection" src="https://github.com/user-attachments/assets/bb673248-5e82-4d6f-8d86-6697cebdf3e0" />  
+
+`nmap -sS -O 10.48.153.79` #TCP Syn with OS fingerprinting
+
+<img width="826" height="358" alt="OS-fingerprinting" src="https://github.com/user-attachments/assets/889a53a9-92fa-4931-a48d-e9487dce9e36" />  
+
+**Result:**  
+Detected 3 outdated services and legacy OS : 
+- LANDesk remote management  → Often targeted for privilege escalation
+- lighttpd 1.4.74 → outdated web server, potential for web exploitation
+- OpenSSH 9.6p1 Ubuntu 3Ubuntu13.5 → linked to [CVE-2024-6387](https://ubuntu.com/security/cve-2024-6387)
+- Linux kernel 4.15 → linked [Vulnerability](https://www.cvedetails.com/version/565008/Linux-Linux-Kernel-4.15.html)
 	
-**<ins>Command Examples:</ins>**
-`nmap -sS 10.49.175.47`    # TCP Syn(Stealthily - Initiate handshake without completion  
-`nmap -sS -O 10.49.175.47`       # Attempt OS fingerprinting
-`nmap -sS -sV 10.49.175.47`    # Syn Scan with Service version detection
+**Analysis:**  
+Version detection reveled outdated services that expand the system's attack surface. Finding above demonstrate how service enumeration supports vulnerabilities assessment, guiding patching priorities and defensive hardening in SOC workflow 
+ 
 
 ## 📝Task 5: Timing - How Fast is Fast  
 **Overview:**  

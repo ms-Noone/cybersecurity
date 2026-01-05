@@ -4,11 +4,10 @@ Category: Networking
 Difficulty: Easy  
 Estimated Time: ~60 minutes  
 Focus Areas: NMAP  
-Goal: Learn how to use Nmap to discover live hosts, find open ports, and detect service versions  
 
 ## 📝 Overview
 
-Hands-on lab focused on Nmap basics — host discovery, port scanning, and service version detection. Objective was to practice reconnaissance techniques connect findings to vulnerability assessment in SOC workflows
+Hands-on lab focused on Nmap fundamentals — host discovery, port scanning, and service version detection. Objective was to practice reconnaissance techniques connect findings to vulnerability assessment in SOC workflows
 
 ## 📝 Task 2: Host Discovery – Who is Online
 **<ins>Commands:</ins>**  
@@ -18,10 +17,10 @@ Hands-on lab focused on Nmap basics — host discovery, port scanning, and servi
 <img width="758" height="591" alt="list-live-host" src="https://github.com/user-attachments/assets/a56ed65d-18b1-46f3-8844-79326a76bc57" />
 
 **Result:**  
-Identified **32 active host** in subnet
+Identified **32 active hosts** in subnet
 
 **Analysis:**  
-Enumerating device is the first step in network reconnaisance. This process helps analyst establish baseline visibility, identify potential attack surface and prioritize systems for security assessment
+Enumerating devices is the first step in network reconnaisance. This process helps analyst establish baseline visibility, identify potential attack surface and prioritize systems for security assessment
 
 ## 📝Task 3: Port Scanning - Who is Listening
 **<ins>Command:</ins>**  
@@ -33,9 +32,14 @@ Enumerating device is the first step in network reconnaisance. This process help
 Found **6 open ports**: 7 (ECHO), 9 (Discard), 13 (Daytime), 17(QOTD) , 22 (SSH), 8008 (HTTP)
 	
 **Analysis:**  
-Identified 4 legacy services (Echo, Discard, Daytime and QOTD). Outdated services increase the system's attack surface and may serve as entry point for DOS or reflection attacks
+- Legacy services (Echo, Discard, Daytime, QOTD): Rarely used today, increase attack surface, and may be exploited for DoS/reflection attacks.
+- SSH (22): Common attack vector, requires monitoring for brute‑force attempts.
+- HTTP (8008): Potential entry point for web exploitation.
 
-
+ **Remediation:** 
+ - Disable legacy services to reduce attack surface
+ - Patch web service to mitigate exploitation risk
+ - Harden SSH with strong authentication
 
 ## 📝Task 4: Version Detection – Extract More Information##  
 **<ins>Command:</ins>**  
@@ -56,7 +60,11 @@ Detected 3 outdated services and a legacy OS:
 	
 **Analysis:**  
 Version detection identified outdated and vulnerable services that expand the system's attack surface. These findings demonstrate how service enumeration supports vulnerability assessment, guiding patching priorities and defensive hardening in SOC workflows 
- 
+
+ **Remediation:** 
+ - Upgrade or replace LANDesk and lighttpd services.
+ - Priotizing OpenSSH patching update
+ - Migrate frim Linux kernel 4.15 to a supported or latest version to ensure ongoing security updates
 
 ## 📝Task 5: Timing - How Fast is Fast  
 **Concepts Learned:**  
@@ -70,7 +78,7 @@ NMAP provides timing templates that can control scan speed and stealth
 | T5 (Insane)   | Very fast | Likely detected, for troubleshooting only | 
 
 **Application example:**  
-Used -T0 or -T1 to evade from detection during reconnaisance, Analyst can also apply these template to test the specific firewall rule and observe how different speed affect IDS/IPS responses
+Used -T0 or -T1 to evade from detection during reconnaisance, Analyst can also apply these templates to test the specific firewall rule and observe how different speed affect IDS/IPS responses
 
 ## 📝Task 6: Output – Controlling What You See
 **Concepts Learned:**  
@@ -88,7 +96,11 @@ Used -T0 or -T1 to evade from detection during reconnaisance, Analyst can also a
 Using the -v option helps analyst gain real-time visibility of scan process, this is valuable during long or complex scan.The `-oA` option is valuable for saving results in multiple formats, supporting incident documentation and further analysis in SOC workflows.
 
 ## 📝 Key Takeways
-NMAP is one of the most widely used tools in Reconnaissance, exploring its feature help me to understand how analysts can enumerate targets, identify services, and assess potential vulnerabilities. This knowledge strengthens defensive strategies and prepares me for real‑world SOC analyst responsibilities.  
+NMAP is one of the most widely used tools in Reconnaissance, This lab reinforced how analyst can:
+- Enumerate hosts and services to establish baseline visibility.
+- Identify outdated or vulnerable software linked to CVEs.
+- Balance stealth and efficiency using timing templates.
+- Document findings in multiple formats for SOC workflows
 
 
 

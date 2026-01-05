@@ -1,4 +1,6 @@
-# NMAP The Basic – TryHackMe Walkthrough
+# NMAP – TryHackMe Walkthrough
+
+Room : NMAP The Basic  
 Date Completed: Dec 31, 2025  
 Category: Networking  
 Difficulty: Easy  

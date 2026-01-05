@@ -17,6 +17,9 @@
 + CompTIA Linux+ (Completed : Credential ID **COMP001022829620**)
 + ISTQB Certified Tester, Foundation Level (Completed : Credential ID **MY0076-13**)
 ---
+## 🔧Tools & Skills
+- NMAP
+---
 ## 🤝 Let’s Connect
 💼 **LinkedIn:** www.linkedin.com/in/nurainmohdaffandi  
 📧 **Email:** ainaffandi@gmail.com  

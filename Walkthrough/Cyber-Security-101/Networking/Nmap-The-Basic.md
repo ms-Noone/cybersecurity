@@ -48,14 +48,14 @@ Identified 4 legacy services (Echo, Discard, Daytime and QOTD). Outdated service
 <img width="826" height="358" alt="OS-fingerprinting" src="https://github.com/user-attachments/assets/889a53a9-92fa-4931-a48d-e9487dce9e36" />  
 
 **Result:**  
-Detected 3 outdated services and legacy OS : 
+Detected 3 outdated services and a legacy OS: 
 - LANDesk remote management  → linked to [CVE-2010-2892](https://www.cvedetails.com/cve/CVE-2010-2892/)
-- lighttpd 1.4.74 → outdated web server
+- lighttpd 1.4.74 → outdated web server with potential web exploitation risks
 - OpenSSH 9.6p1 Ubuntu 3Ubuntu13.5 → linked to [CVE-2024-6387](https://ubuntu.com/security/cve-2024-6387)
-- Linux kernel 4.15 → linked [Vulnerability](https://www.cvedetails.com/version/565008/Linux-Linux-Kernel-4.15.html)
+- Linux kernel 4.15 → End-of-Life and no longer receive security patches [Vulnerability](https://www.cvedetails.com/version/564832/Linux-Linux-Kernel-4.15.html)
 	
 **Analysis:**  
-Version detection reveled outdated services that expand the system's attack surface. Finding above demonstrate how service enumeration supports vulnerabilities assessment, guiding patching priorities and defensive hardening in SOC workflow 
+Version detection identified outdated and vulnerable services that expand the system's attack surface. These findings demonstrate how service enumeration supports vulnerability assessment, guiding patching priorities and defensive hardening in SOC workflows 
  
 
 ## 📝Task 5: Timing - How Fast is Fast  

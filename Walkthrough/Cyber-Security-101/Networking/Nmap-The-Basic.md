@@ -41,7 +41,7 @@ Found **6 open ports**: 7 (ECHO), 9 (Discard), 13 (Daytime), 17(QOTD) , 22 (SSH)
  - Patch web service to mitigate exploitation risk
  - Harden SSH with strong authentication
 
-## 📝Task 4: Version Detection – Extract More Information##  
+## 📝Task 4: Version Detection – Extract More Information
 **<ins>Command:</ins>**  
 `nmap -sS -sV 10.48.153.79` #TCP Syn with Service version detection
 

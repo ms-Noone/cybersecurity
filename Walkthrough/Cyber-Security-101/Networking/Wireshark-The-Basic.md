@@ -11,15 +11,15 @@ This hands-on lab focused on Wireshark fundamentals, including:
 - Navigate and configure Wireshark interface
 - Inspect packet to extract information
 - Apply display filter to isolate relevant traffic.
+
+**Packet file used:**  
+- Exercise.pcapng  
   
 **Objective:**  
 Practice network analysis and deepen understanding of protocols within the packet capture. These skills are critical in SOC workflows for detecting anomalies, investigating suspicious traffic, and validating security events.  
 
 ## 📝 Task 2: Tool Overview
 
-**Packet file used:**  
-- Exercise.pcapng
-  
 **Process:**  
 	1. Open the capture file in Wireshark  
 	2. Reviewed file metadata via **Capture File Properties**    
@@ -38,9 +38,6 @@ File metadata provide critical info for SOC investigations:
 - Verifying the packet integrity to ensure evidence have not been tampered with.
 
 ## 📝Task 3: Packet Dissection  
-
-**Packet file used:**  
-- Exercise.pcapng
 
 **Process:**  
 	1. Open the capture file in Wireshark  
@@ -62,9 +59,6 @@ Wireshark's layer by layer decoding helps analysts to pinpoint issue within pack
 
 ## 📝Task 4: Packet Navigation
 
-**Packet file used:**  
-- Exercise.pcapng
-
 **Process:**  
 	1. Used "Find Packet" to locate string `r4W` within packet details  
 	<img width="1919" height="882" alt="find-packet" src="https://github.com/user-attachments/assets/c8c6bfd6-b680-44ef-9da7-f4af30652dbb" /> <br/>
@@ -83,5 +77,17 @@ The Expert Information panel consolidates protocol issues by severity (warnings,
 - Focus on the most impactful issues first  
 - Guide remediation efforts by highlighting misconfiguration, retransmission or protocol violations
 
+## 📝Task 5: Packet Filtering
+**Process:**  
+	1. Applied Wireshark display filter: Hypertext Transfer Protocol on packet **4** to isolate the http traffic  
+	2. Verified the number of displayed packets after filtering  
+	3. Followed the HTTP stream for packet **33790** to extract application‑level data  
+
+**Result:**  
+	• Filter details →Filter query: http, Displayed packet: 1089  
+	• Extracted HTTP data → Total no of artis: 3, second artis name: Blad3 
+	
+**Analysis:**  
+Packet filtering helps analysts isolate suspicious traffic for deeper investigation. Additionally, findings such as the extracted artist name demonstrate how application‑level data can support incident investigations and validate anomalies.
 
 

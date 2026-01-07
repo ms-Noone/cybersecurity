@@ -90,4 +90,9 @@ The Expert Information panel consolidates protocol issues by severity (warnings,
 **Analysis:**  
 Packet filtering helps analysts isolate suspicious traffic for deeper investigation. Additionally, findings such as the extracted artist name demonstrate how application‑level data can support incident investigations and validate anomalies.
 
+## 📝 Key Takeways  
+Wireshark commonly used to perform fundamental packet analysis, providing visibility into network traffic and protocol behaviour. Key applications include:  
+- Incident investigation → Inspect alerts and help to identify evidence of attack  
+- Threat hunting → Detect anomalies and potential of data exfiltration  
+- Malware analysis → Identify Indicator of Compromise (IOC) such as malicious IP address, domain name and also extract files, scripts or malicious binaries  
 

@@ -18,7 +18,9 @@
 + ISTQB Certified Tester, Foundation Level (Completed : Credential ID **MY0076-13**)
 ---
 ## 🔧Tools & Skills
-- NMAP
+- NMAP (Beginner)
+- Wireshark (Beginner)
+- Tcpdump (Beginner)
 ---
 ## 🤝 Let’s Connect
 💼 **LinkedIn:** www.linkedin.com/in/nurainmohdaffandi  

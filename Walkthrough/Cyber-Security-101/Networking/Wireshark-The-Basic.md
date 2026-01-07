@@ -61,3 +61,31 @@ Wireshark performs layer by layer decoding which helps analysts to pinpoint issu
 - Anomalies in TTL that indicates spoofing or misconfigured device
 - TCP retransmission or incorrect application behavior in Protocol Dissection
 
+## 📝Task 4: Packet Navigation
+
+Packet file used:
+
+Exercise.pcapng
+
+**Process:**  
+	1. Open "Exercise.pcapng" in Wireshark  
+	2. Navigate to "Edit" > "Find Packet" > Choose "Search Fields: Packet Details" > Choose "Input Type: String" > r4W  
+	<img width="1919" height="882" alt="find-packet" src="https://github.com/user-attachments/assets/c8c6bfd6-b680-44ef-9da7-f4af30652dbb" /> <br/>
+	3. Navigate to "File" > "Export Object" > "http" > Write ".txt" into "Text Filter" > save  
+	<img width="1917" height="939" alt="export-object" src="https://github.com/user-attachments/assets/4d18c315-0dfc-47bc-8018-75d63cced2f8" /><br/>
+	4. View "Expert information" located on the bottom left  
+	<img width="1913" height="938" alt="exper-info" src="https://github.com/user-attachments/assets/16434329-ff2b-4a40-89ac-84ff558b5c7f" />
+
+
+**Result:**  
+- Name of artist 1 : r4w8173
+- Alien's name : PACKETMASTER
+- Number of Warning : 1636
+	
+**Analysis:**  
+Expert Information panel provides grouped of summary categories with different severity level (warnings, errors, notes). This help analyst :  
+- Focus on the most impactful issues first  
+- Guide remediation efforts by highlighting misconfiguration, retransmission or protocol violations
+
+
+

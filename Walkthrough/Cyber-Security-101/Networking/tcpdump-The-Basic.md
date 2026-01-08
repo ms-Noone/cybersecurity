@@ -1,6 +1,6 @@
 # Tcpdump – TryHackMe Walkthrough
 
-**Room** : Tcpdump The Basic  
+**Room** : [Tcpdump The Basic](https://tryhackme.com/room/tcpdump)  
 **Date Completed** : Jan 8, 2025  
 **Category** : Networking  
 **Focus Areas** : Command Line Packet capture  

@@ -2,12 +2,17 @@
 
 #### On a journey from home management to cyber defense, exploring cybersecurity to build new skills
 ---
-
 ## 🧭 Learning Roadmap
 | TryHackMe Path  | Progres | Room Type | Walkthrough | 
 | ------------- | ------------- | ------------- | ------------- |
 | CyberSecurity101  | 37% | Learning | [Cyber-Security-101](https://github.com/ms-Noone/cybersecurity-portfolio/tree/main/Cyber-Security-101) |
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+---
+## ⚔️ Challenge / CTF
+| TryHackMe Path  | Walkthrough | 
+| ------------- | ------------- |
+| OTW - Bandits  | [OTW-Bandits](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/Over-The-Wire/Bandits-Walkthrough) |
+
 ---
 ## ⚙️ Current Focus
 - [ ] TryHackMe - CyberSecurity101

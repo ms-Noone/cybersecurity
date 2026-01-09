@@ -1,7 +1,7 @@
 # Cybersecurity 101 Walkthrough
 
 ## Overview
-This repository contains step‑by‑step walkthroughs for all modules under the Cybersecurity 101 learning path.
+This repository contains step‑by‑step walkthroughs for all modules under TryHackMe learning path.
 It is designed to help beginners and aspiring SOC analysts build a strong foundation in networking, security concepts, and practical defense strategies.
 Each walkthrough is written in clear, structured Markdown with:
 - ✅ Room Process

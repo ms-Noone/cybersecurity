@@ -104,4 +104,4 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 
 **Password for Level 6:**  
-``  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+`HWasnPhtq9AVKe0dmk45nxy20cvUa6EG`  _#Passwords shown are from OverTheWire Bandit and reset periodically_

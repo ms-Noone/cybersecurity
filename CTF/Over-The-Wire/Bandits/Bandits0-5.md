@@ -1,4 +1,4 @@
-# OverTheWire: Bandit Level 0 -7
+# OverTheWire: Bandit Level 0 -5
 This walkthrough documents my solutions for the OverTheWire Bandit wargame. Bandit is designed to teach Linux basics, command-line usage, and security concepts.  
 
 ## 🔑 Level 0 → Level 1
@@ -35,7 +35,6 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 6. Output:  
    <img width="644" height="61" alt="image" src="https://github.com/user-attachments/assets/eaf2b820-0f6a-45f5-a56a-c3f6587e705c" />
 
-
 **Analysis:**  
 - Dashed filename caused command-line confusion and will also break the automation script if not handled properly
 - This challenge show that edge case must be handled properly as it can cause unexpected issue
@@ -44,14 +43,21 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 `263JGJPfgU6LtdEvgfWU1XP5yac29mFx`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 
 ## 🔑 Level 2 → Level 3
-**Goal:** 
+**Goal:** Password stored in a file name `--spaces in this filename--`  
 **Steps:**  
-1. 
+1. After login, verify current directory: `pwd`
+2. If confirm in /home/bandit0, list files : `ls`
+3. Else, change directory to home : `cd ~` then list files `ls`
+4. `--spaces in this filename--` file is listed in home directory
+5. Display contents: `cat ./"--spaces in this filename--"`
+6. Output:  
+   <img width="698" height="87" alt="image" src="https://github.com/user-attachments/assets/478ee589-9b68-4581-b655-3607d8665600" />
 
 **Analysis:**  
-- 
+- Spaces in filename cause command execution and automation script to break, they also lead to broken filepath in Web/URL
+- Users, developers or analyst should avoid special character in filename as command may interpret them as multiple separate arguments
 
-**Password for Level 2:**  
-``  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+**Password for Level 3:**  
+`MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 
 

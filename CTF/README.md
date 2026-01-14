@@ -7,7 +7,7 @@ This repository documents my step-by-step solutions, commands used, and key lear
 ## 📂 Repository Structure
 | CTF  | Description | Walkthrough | 
 | ------------- | ------------- | ------------- |
-| Over The Wire - Bandits  | Beginner-level Linux and security basics | [OTW-Bandits0-5](https://github.com/ms-Noone/cybersecurity/blob/main/CTF/Over-The-Wire/Bandits/Bandits0-5.md) |
+| Over The Wire - Bandits  | Beginner-level Linux and security basics | [OTW-Bandits](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/Over-The-Wire/Bandits) |
 
 ## 🛠️ Skills Demonstrated
 **TBD**

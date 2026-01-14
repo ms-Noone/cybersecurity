@@ -92,3 +92,16 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 **Password for Level 5:**  
 `4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+
+## 🔑 Level 5 → Level 6
+**Goal:** The password for the next level is stored in a file inside the `inhere` directory. The file is the only one that is human‑readable, ASCII text, and not empty
+
+**Steps:**  
+1. After login, change directory: `cd inhere`  
+2. 
+
+**Analysis:**  
+
+
+**Password for Level 6:**  
+``  _#Passwords shown are from OverTheWire Bandit and reset periodically_

@@ -10,8 +10,8 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```
 **Steps:**  
 1. After login, verify current directory: `pwd`
-2. If confirm in /home/bandit0, list files : `ls`
-3. Else, change directory to home : `cd ~` then list files `ls`
+2. If confirm in /home/bandit0, list files: `ls`
+3. Else, change directory to home: `cd ~` then list files `ls`
 4. `readme` file is listed in the home directory
 5. Display contents: `cat readme`
 6. Output:  
@@ -28,8 +28,8 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 **Goal:** Password stored in a file called `-`  
 **Steps:**  
 1. After login, verify current directory: `pwd`
-2. If confirm in /home/bandit0, list files : `ls`
-3. Else, change directory to home : `cd ~` then list files `ls`
+2. If confirm in /home/bandit0, list files: `ls`
+3. Else, change directory to home: `cd ~` then list files `ls`
 4. `-` file is listed in home directory
 5. Display contents: `cat ./-`
 6. Output:  
@@ -46,8 +46,8 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 **Goal:** Password stored in a file name `--spaces in this filename--`  
 **Steps:**  
 1. After login, verify current directory: `pwd`
-2. If confirm in /home/bandit0, list files : `ls`
-3. Else, change directory to home : `cd ~` then list files `ls`
+2. If confirm in /home/bandit0, list files: `ls`
+3. Else, change directory to home: `cd ~` then list files `ls`
 4. `--spaces in this filename--` file is listed in home directory
 5. Display contents: `cat ./"--spaces in this filename--"`
 6. Output:  
@@ -63,11 +63,17 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 ## 🔑 Level 3 → Level 4
 **Goal:** Password stored in a hidden file in `inhere` directory  
 **Steps:**  
-1. 
+1. After login, change directory: `cd inherent`
+2. List hidden files: `ls -a`
+3. `...Hiding-From-You` file is listed
+4. Display contents: `cat ...Hiding-From-You`
+5. Output:  
+   <img width="747" height="92" alt="image" src="https://github.com/user-attachments/assets/2a60a658-b21b-493d-be88-00883c1f1f81" />
+
  
 
 **Analysis:**  
 - 
 
 **Password for Level 4:**  
-``  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+`2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ`  _#Passwords shown are from OverTheWire Bandit and reset periodically_

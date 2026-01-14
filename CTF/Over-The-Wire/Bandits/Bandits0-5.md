@@ -60,4 +60,14 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 **Password for Level 3:**  
 `MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 
+## 🔑 Level 3 → Level 4
+**Goal:** Password stored in a hidden file in `inhere` directory  
+**Steps:**  
+1. 
+ 
 
+**Analysis:**  
+- 
+
+**Password for Level 4:**  
+``  _#Passwords shown are from OverTheWire Bandit and reset periodically_

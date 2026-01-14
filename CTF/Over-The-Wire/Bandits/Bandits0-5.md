@@ -94,14 +94,19 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 `4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 
 ## 🔑 Level 5 → Level 6
-**Goal:** The password for the next level is stored in a file inside the `inhere` directory. The file is the only one that is human‑readable, ASCII text, and not empty
+**Goal:** The password for the next level is stored in a file inside the `inhere` directory. The file is the only one that is human‑readable, 1033 bytes in size, and not executable
 
 **Steps:**  
 1. After login, change directory: `cd inhere`  
-2. 
+2. Find human-readable file with 1033bytes size and not executable: `find maybehere* -size 1033c ! -executable`  
+   <img width="699" height="36" alt="image" src="https://github.com/user-attachments/assets/f295b97f-ab93-44dc-a419-a620dc6c9d9c" />
+4. Display content: `cat maybehere07/.file2`  
+6. Output:  
+   <img width="557" height="41" alt="image" src="https://github.com/user-attachments/assets/6d079e0c-9fd7-4570-8271-2d92a42d115f" />
 
 **Analysis:**  
-
+- This challenge highlight the needs of combining multiple checks (file type + content) to filter noise and focus on relevant data  
+- Analysts must pay attention to ambiguous files with unusual sizes, as they may indicate attacker activity or data exfiltration attempts  
 
 **Password for Level 6:**  
 `HWasnPhtq9AVKe0dmk45nxy20cvUa6EG`  _#Passwords shown are from OverTheWire Bandit and reset periodically_

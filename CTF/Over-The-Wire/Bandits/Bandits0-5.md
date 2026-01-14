@@ -76,3 +76,19 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 **Password for Level 4:**  
 `2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+
+## 🔑 Level 4 → Level 5
+**Goal:** The password for the next level is stored in a file inside the `inhere` directory, but the file is human‑readable among many binary files  
+**Steps:**  
+1. After login, change directory: `cd inhere`  
+2. Find the human-readable file: `file ./-file0*`  
+   <img width="464" height="179" alt="image" src="https://github.com/user-attachments/assets/99279eba-9ff4-4d33-9907-8e856de5a8f2" />
+3. Display contents: `cat ./-file07`
+4. Output:  
+   <img width="461" height="31" alt="image" src="https://github.com/user-attachments/assets/c01c56b3-3baf-4d8e-8164-78f8be9e776d" />
+
+**Analysis:**  
+- `file` tool helps analyst to quickly classify data and avoid wasting time parsing irrelevant files during investigation  
+
+**Password for Level 5:**  
+`4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw`  _#Passwords shown are from OverTheWire Bandit and reset periodically_

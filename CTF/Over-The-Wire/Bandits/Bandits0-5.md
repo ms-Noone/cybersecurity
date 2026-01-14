@@ -63,17 +63,16 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 ## 🔑 Level 3 → Level 4
 **Goal:** Password stored in a hidden file in `inhere` directory  
 **Steps:**  
-1. After login, change directory: `cd inherent`
+1. After login, change directory: `cd inhere`
 2. List hidden files: `ls -a`
 3. `...Hiding-From-You` file is listed
 4. Display contents: `cat ...Hiding-From-You`
 5. Output:  
    <img width="747" height="92" alt="image" src="https://github.com/user-attachments/assets/2a60a658-b21b-493d-be88-00883c1f1f81" />
 
- 
-
 **Analysis:**  
-- 
+- Hidden file used by attacker to obscured data and evade detection by users and security tools
+- For analyst, thorought enumeration is critical to avoid missing hidden files, as this may lead to incomplete investigation
 
 **Password for Level 4:**  
 `2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ`  _#Passwords shown are from OverTheWire Bandit and reset periodically_

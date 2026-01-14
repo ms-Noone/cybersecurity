@@ -2,14 +2,56 @@
 This walkthrough documents my solutions for the OverTheWire Bandit wargame. Bandit is designed to teach Linux basics, command-line usage, and security concepts.  
 
 ## 🔑 Level 0 → Level 1
-**Goal:** Find the password for the next level.  
-**Connection:**
+**Goal:** Retrieve the password for the next level.  
+**Connection:**  
+```
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+# password: bandit0
+```
+**Steps:**  
+1. After login, verify current directory: `pwd`
+2. If confirm in /home/bandit0, list files : `ls`
+3. Else, change directory to home : `cd ~` then list files `ls`
+4. `readme` file is listed in the home directory
+5. Display contents: `cat readme`
+6. Output:  
+   <img width="722" height="134" alt="image" src="https://github.com/user-attachments/assets/ae6b8b1c-55a8-4c9a-aa65-003cf45afb6c" />
+
+**Analysis:**  
+- Password stored in basic simple text file
+- This challenge highlights the importance of confirming directory context before accessing files
+
+**Password for Level 1:**  
+`_ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If_`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+
+## 🔑 Level 1 → Level 2
+**Goal:** Password stored in a file called `-`  
+**Steps:**  
+1. After login, verify current directory: `pwd`
+2. If confirm in /home/bandit0, list files : `ls`
+3. Else, change directory to home : `cd ~` then list files `ls`
+4. `-` file is listed in home directory
+5. Display contents: `cat ./-`
+6. Output:  
+   <img width="644" height="61" alt="image" src="https://github.com/user-attachments/assets/eaf2b820-0f6a-45f5-a56a-c3f6587e705c" />
 
 
-**Steps:**
+**Analysis:**  
+- Dashed filename caused command-line confusion and will also break the automation script if not handled properly
+- This challenge show that edge case must be handled properly as it can cause unexpected issue
 
-**Analysis:**
+**Password for Level 2:**  
+`263JGJPfgU6LtdEvgfWU1XP5yac29mFx`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 
-**Password for Level 1:**
+## 🔑 Level 2 → Level 3
+**Goal:** 
+**Steps:**  
+1. 
+
+**Analysis:**  
+- 
+
+**Password for Level 2:**  
+``  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 
 

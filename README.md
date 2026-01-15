@@ -11,7 +11,7 @@
 ## ⚔️ Challenge / CTF
 | TryHackMe Path  | Walkthrough | 
 | ------------- | ------------- |
-| OTW - Bandits  | [OTW-Bandits](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/Over-The-Wire/Bandits-Walkthrough) |
+| OTW - Bandits  | [OTW-Bandits](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/Over-The-Wire/Bandits) |
 
 ---
 ## ⚙️ Current Focus

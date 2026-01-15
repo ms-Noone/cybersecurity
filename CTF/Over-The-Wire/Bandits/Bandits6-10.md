@@ -36,7 +36,8 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
    <img width="453" height="34" alt="image" src="https://github.com/user-attachments/assets/61e08408-33bf-4e4a-a9cc-ee553aa64c67" />
 
 **Analysis:**  
-- `grep` is a useful tool in log analysis. Ex: Detecting suspicious behaviour like multiple SSH failure
+- `grep` is a essential utility in log analysis. Ex: Detecting suspicious behaviour like multiple SSH failure
+- Beyond simple searches, `grep` is capable of performing complex pattern matching and data extraction
 
 **Password for Level 8:**  
 `dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc`  _#Passwords shown are from OverTheWire Bandit and reset periodically_

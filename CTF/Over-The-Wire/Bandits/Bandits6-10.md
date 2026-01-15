@@ -55,7 +55,8 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
    <img width="455" height="33" alt="image" src="https://github.com/user-attachments/assets/d125e7dd-f4ca-4007-83b7-505f52047f96" />
 
 **Analysis:**  
-- 
+- Using `sort` and `uniq` flag reinforced the importance of pattern recognition.
+- In log analysis or investigations, anomalies usually hidden in a flood of normal activity. This technique helps to quickly spot the suspicious activities
 
 **Password for Level 9:**  
 `4CKMh1JI91bUIZZPXDqGanal4xvAg0JM`  _#Passwords shown are from OverTheWire Bandit and reset periodically_

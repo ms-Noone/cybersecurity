@@ -9,9 +9,13 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 # password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 ```
 **Steps:**  
-1. After login, retrieve the file: `find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null`
+1. After login, retrieve the file: `find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null`  
+   - `-type f` → look only for files  
+   - `-user` → owned by user  
+   - `-group` → belong to group  
+   - `2>/dev/null` → hide error message like 'Permission denied'  
 2. Display contents: `cat /var/lib/dpkg/info/bandit7.password`
-3. Output:  
+4. Output:  
    <img width="675" height="33" alt="image" src="https://github.com/user-attachments/assets/dd892218-da90-4061-81a8-2673572e95d1" />
 
 **Analysis:**  
@@ -20,3 +24,15 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 
 **Password for Level 7:**  
 `morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+
+## 🔑 Level 7 → Level 8
+**Goal:** Password stored in a file called `-`  
+**Steps:**  
+1. After login, verify current directory: `pwd`
+
+
+**Analysis:**  
+- 
+
+**Password for Level 8:**  
+``  _#Passwords shown are from OverTheWire Bandit and reset periodically_

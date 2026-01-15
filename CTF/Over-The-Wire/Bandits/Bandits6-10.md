@@ -20,21 +20,23 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 
 **Analysis:**  
 - File attributes (owner, group, size) are powerful filters that we can use to locate sensitive data in large system
-- Metadata awareness helps analysts to quickly triage suspicious files without manually parsing everything
+- Metadata awareness helps to quickly triage suspicious files without manually parsing everything
 
 **Password for Level 7:**  
 `morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 
 ## 🔑 Level 7 → Level 8
-**Goal:** Password stored in a file called `-`  
+**Goal:** Retrieve the password stored in a file called `data.txt` and find the line containing the word `millionth`  
+
 **Steps:**  
 1. After login, list file: `ls`  
-2. search for text in data.txt file: `grep 'millionth' data.txt`  
-3. Output:  
+2. `data.txt` is listed in the home directory 
+3. search for target string in data.txt: `grep 'millionth' data.txt`  
+4. Output:  
    <img width="453" height="34" alt="image" src="https://github.com/user-attachments/assets/61e08408-33bf-4e4a-a9cc-ee553aa64c67" />
 
 **Analysis:**  
-- 
+- `grep` is a useful tool in log analysis. Ex: Detecting suspicious behaviour like multiple SSH failure
 
 **Password for Level 8:**  
 `dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc`  _#Passwords shown are from OverTheWire Bandit and reset periodically_

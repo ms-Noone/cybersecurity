@@ -1,7 +1,7 @@
 # Wireshark -Tryhackme Walkthrough
 
 **Room:** [Wireshark The Basic](https://tryhackme.com/room/wiresharkthebasics)  
-**Date Completed:** Jan 7, 2025  
+**Date Completed:** Jan 7, 2026  
 **Category:** Networking  
 **Focus Areas:** Wireshark  
 

@@ -28,11 +28,13 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 ## 🔑 Level 7 → Level 8
 **Goal:** Password stored in a file called `-`  
 **Steps:**  
-1. After login, verify current directory: `pwd`
-
+1. After login, list file: `ls`  
+2. search for text in data.txt file: `grep 'millionth' data.txt`  
+3. Output:  
+   <img width="453" height="34" alt="image" src="https://github.com/user-attachments/assets/61e08408-33bf-4e4a-a9cc-ee553aa64c67" />
 
 **Analysis:**  
 - 
 
 **Password for Level 8:**  
-``  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+`dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc`  _#Passwords shown are from OverTheWire Bandit and reset periodically_

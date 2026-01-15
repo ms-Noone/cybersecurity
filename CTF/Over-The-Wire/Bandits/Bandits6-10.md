@@ -41,3 +41,21 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 
 **Password for Level 8:**  
 `dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+
+## 🔑 Level 8 → Level 9
+**Goal:** Retrieve the password stored in `data.txt` where one line is the only unique entry  
+
+**Steps:**  
+1. After login, list file: `ls`  
+2. `data.txt` is listed in the home directory 
+3. sort and find the unique entry in data.txt: `sort data.txt | uniq -u`  
+   - `sort` → sort uppercase followed by lowercase  
+   - `uniq -u` → display only unique line
+5. Output:  
+   <img width="455" height="33" alt="image" src="https://github.com/user-attachments/assets/d125e7dd-f4ca-4007-83b7-505f52047f96" />
+
+**Analysis:**  
+- 
+
+**Password for Level 9:**  
+`4CKMh1JI91bUIZZPXDqGanal4xvAg0JM`  _#Passwords shown are from OverTheWire Bandit and reset periodically_

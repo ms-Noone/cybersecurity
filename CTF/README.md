@@ -10,4 +10,4 @@ This repository documents my step-by-step solutions, commands used, and key lear
 | Over The Wire - Bandits  | Beginner-level Linux and security basics | [OTW-Bandits](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/Over-The-Wire/Bandits) |
 
 ## 🛠️ Skills Demonstrated
-**TBD**
+- Linux

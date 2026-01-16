@@ -9,9 +9,9 @@
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 ---
 ## ⚔️ Challenge / CTF
-| TryHackMe Path  | Walkthrough | 
+| Challenge/CTF  | Walkthrough | 
 | ------------- | ------------- |
-| OTW - Bandits  | [OTW-Bandits](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/Over-The-Wire/Bandits) |
+| OverTheWire - Bandits  | [OTW-Bandits](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/Over-The-Wire/Bandits) |
 
 ---
 ## ⚙️ Current Focus

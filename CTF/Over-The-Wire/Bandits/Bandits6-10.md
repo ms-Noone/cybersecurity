@@ -60,3 +60,21 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 
 **Password for Level 9:**  
 `4CKMh1JI91bUIZZPXDqGanal4xvAg0JM`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+
+## 🔑 Level 9 → Level 10
+**Goal:** Retrieve the password stored in `data.txt` where the password is human readable preceded by several '=' characters
+
+**Steps:**  
+1. After login, list file: `ls`  
+2. `data.txt` is listed in the home directory 
+3. Extract human readable strings and filter for line containing '=': `strings data.txt | grep "=="`  
+   - `strings` → extracts printable text from binary or object file  
+5. Output:  
+   <img width="401" height="82" alt="image" src="https://github.com/user-attachments/assets/f5c28f61-ea0c-499b-8bb0-4e91c0ead04d" />
+
+**Analysis:**  
+- Combining `strings` and `grep` is an effective technique for extracting hidden data from noisy or obfuscated data
+
+**Password for Level 9:**  
+`FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+

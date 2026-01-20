@@ -78,3 +78,20 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 **Password for Level 9:**  
 `FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 
+## 🔑 Level 10 → Level 11
+**Goal:** Retrieve the password stored in `data.txt` where the password is encoded in base64
+
+**Steps:**  
+1. After login, list file: `ls`  
+2. `data.txt` is listed in the home directory 
+3. Decode the base64 string to reveal the password: `base64 -d data.txt`  
+   - `base64 -d` → decodes the encoded text back into human-readable text
+5. Output:  
+   <img width="403" height="33" alt="image" src="https://github.com/user-attachments/assets/d2059b3f-0b22-4958-88bd-df95e913b9c3" />
+
+**Analysis:**  
+- This challenge reinforce the importance of recognizing encoding pattern and applying the right decoding tools to uncover hidden information
+
+**Password for Level 9:**  
+`dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+

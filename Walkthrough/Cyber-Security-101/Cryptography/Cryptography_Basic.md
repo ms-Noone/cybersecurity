@@ -4,7 +4,7 @@
 **Category** : Cryptography  
 **Focus Areas** : Cryptography and symmetric encryption  
 
-## Task 2: Importance of Cryptography
+## 📝Task 2: Importance of Cryptography
 
 **Concept Learned:**  
   - Cryptography protect confidentiality, integrity, and authenticity
@@ -17,7 +17,7 @@
   - Integrity : use hashes / checksum to verify files or logs haven't been tampered
   - Authenticity : Digital signature & certificates validates the identity of the sender or source
 	
-## Task 3: Plaintext to Ciphertext
+## 📝Task 3: Plaintext to Ciphertext
 
 **Concept Learned:**   
   - Cipher : Algorithm to convert plaintext into a ciphertext or vice versa
@@ -28,7 +28,7 @@
   - Data protection : encryption secure data at rest, in transit and in use
   - Confidentiality : ensure only intended recipient can read the data
 
-## Task 4: Historical Ciphers
+## 📝Task 4: Historical Ciphers
 
 **Concept Learned:**  
   - Caesar Cipher  
@@ -41,7 +41,7 @@
   - Weak security : Caesar cipher is considered insecure because its only have 25 possible keys
   - Brute force risk: An attacker can simply try all possible shifts to expose the plaintext
 
-## Task 5: Type of Encryption
+## 📝Task 5: Type of Encryption
 
 **Concept Learned:**  
   - Symmetric Encryption  
@@ -58,7 +58,7 @@ Security Perspective:
 	1. The private key must be protected from leaked, if not all data can be decrypted
 	2. Symmetric keys must be exchanged through secure communication channel to prevent interception
 
-## Task 6: Basic Math
+## 📝Task 6: Basic Math
 
 Concept Learned:
 	1. Two mathematical operations used in cryptography:

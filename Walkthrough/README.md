@@ -7,7 +7,7 @@ Each walkthrough is written in clear, structured Markdown with:
 - ✅ Room Process
 - ✅ Key concepts and definitions
 - ✅ Command examples
-- ✅ Reflection
+- ✅ Summary
 
 ## Cyber Security 101 Path
 | Topic | No of Room | Completed Room  | Walkthrough |

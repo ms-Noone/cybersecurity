@@ -5,9 +5,9 @@ This repository contains step‑by‑step walkthroughs for all rooms under TryHa
 It is designed to help beginners and aspiring SOC analysts build a strong foundation in networking, security concepts, and practical defense strategies.
 Each walkthrough is written in clear, structured Markdown with:
 - ✅ Room Process
-- ✅ Key concepts and definitions
-- ✅ Command examples
-- ✅ Summary
+- ✅ Key takeways
+- ✅ Analysis / Security Perspective
+- ✅ Summary  /Key Learned
 
 ## Cyber Security 101 Path
 | Topic | No of Room | Completed Room  | Walkthrough |

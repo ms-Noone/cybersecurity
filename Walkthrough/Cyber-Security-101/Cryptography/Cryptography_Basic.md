@@ -13,9 +13,9 @@
     b. Encryption of data at rest and in motion  
 
 **Security Perspective:**  
-  - Confidentiality : avoid using unencrypted protocol during data transmission as this expose plaintext
+  - Confidentiality : avoid using unencrypted protocol during data transmission as this expose sensitive data
   - Integrity : use hashes / checksum to verify files or logs haven't been tampered
-  - Authenticity : Digital signature & certificates validates the authenticity of communication or files
+  - Authenticity : Digital signature & certificates validates the identity of the sender or source
 	
 ## Task 3: Plaintext to Ciphertext
 
@@ -46,7 +46,7 @@
 **Concept Learned:**  
   - Symmetric Encryption  
 		a. Use same key (private key) to encrypt and decrypt the data  
-		b. Fast and efficient for bulk data (e.g., disk encryption, VPN tunnels)  
+		b. Fast and efficient for bulk data (e.g., disk encryption, VPN tunnels) but key distribution is risky  
     
 - Asymmetric Encryption  
 		a. Use pair of keys:  

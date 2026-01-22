@@ -1,4 +1,4 @@
-# OverTheWire: Bandit Level 6-10
+# OverTheWire: Bandit Level 11-15
 This walkthrough documents my solutions for the OverTheWire Bandit wargame. Bandit is designed to teach Linux basics, command-line usage, and security concepts.  
 
 ## 🔑 Level 11 → Level 12

@@ -75,7 +75,7 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 **Analysis:**  
 - Combining `strings` and `grep` is an effective technique for extracting hidden data from noisy or obfuscated data
 
-**Password for Level 9:**  
+**Password for Level 10:**  
 `FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 
 ## 🔑 Level 10 → Level 11
@@ -92,6 +92,6 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 **Analysis:**  
 - This challenge reinforce the importance of recognizing encoding pattern and applying the right decoding tools to uncover hidden information
 
-**Password for Level 10:**  
+**Password for Level 11:**  
 `dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 

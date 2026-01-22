@@ -49,21 +49,21 @@ Explore on Hashing functions and their uses in password verification and file in
 # Task 6: Passwrod Cracking
   - **Hash Cracking Tools:** Hashcat, John the Ripper, Rainbow Table  
 **Process:**
-  - **Command:**  `hashcat -m <hash_type> -a <attack_mode> hashfile wordlist #to crack the hash`
+  - **General Command:**  `hashcat -m <hash_type> -a <attack_mode> hashfile wordlist`
   - Run hashcat command: `hashcat -m 3200 -a 0 Hashing-Basics/Task-6/hash1.txt /usr/share/wordlists/rockyou.txt`
     <img width="816" height="825" alt="image" src="https://github.com/user-attachments/assets/f275c950-aa06-4c51-bfc3-33cda955a7f4" />
   - Run hashcat command: `hashcat -m 1400 -a 0 Hashing-Basics/Task-6/hash2.txt /usr/share/wordlists/rockyou.txt`
     <img width="858" height="579" alt="image" src="https://github.com/user-attachments/assets/8dac5f56-cfe8-4424-b429-94c4c2909d41" />
   - Run hashcat command: `hashcat -m 1800 -a 0 Hashing-Basics/Task-6/hash3.txt /usr/share/wordlists/rockyou.txt`
     <img width="937" height="490" alt="image" src="https://github.com/user-attachments/assets/09c79e5a-7761-425b-8068-1232cb08341e" />
-  - for MD5, i crack it using online rainbow table:
+  - for MD5, cracked using the online Rainbow table:
   <img width="1616" height="368" alt="image" src="https://github.com/user-attachments/assets/914cabeb-486b-4f28-825e-22c98fcae713" />
 
-    
 **Result:**
   - bcrypt hash cracked → 85208520
   - SHA-256 hash cracked → halloween
   - SHA-512crypt hash cracked → spaceman
   - MD5 hash cracked → funforyou
-    
-**Analysis:**
+
+# Task 7: Hashing for Integrity Checking
+

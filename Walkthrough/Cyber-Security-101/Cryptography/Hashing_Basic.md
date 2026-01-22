@@ -47,6 +47,21 @@ Explore on Hashing functions and their uses in password verification and file in
   - NTLM are vulnerable to offline cracking, recommended to use stronger authentication mechanism like kerberos
 
 # Task 6: Passwrod Cracking
-**Key Takeaways:** 
-  - **Tools:** Hashcat, John the Ripper, Rainbow Table
-  - 
+  - **Hash Cracking Tools:** Hashcat, John the Ripper, Rainbow Table  
+**Process:**
+  - **Command:**  `hashcat -m <hash_type> -a <attack_mode> hashfile wordlist #to crack the hash`
+  - Run hashcat command: `hashcat -m 3200 -a 0 Hashing-Basics/Task-6/hash1.txt /usr/share/wordlists/rockyou.txt`
+    <img width="816" height="825" alt="image" src="https://github.com/user-attachments/assets/f275c950-aa06-4c51-bfc3-33cda955a7f4" />
+  - Run hashcat command: `hashcat -m 1400 -a 0 Hashing-Basics/Task-6/hash2.txt /usr/share/wordlists/rockyou.txt`
+    <img width="858" height="579" alt="image" src="https://github.com/user-attachments/assets/8dac5f56-cfe8-4424-b429-94c4c2909d41" />
+  - Run hashcat command: 
+
+
+    
+**Result:**
+  - bcrypt hash cracked → 85208520
+  - SHA-256 hash cracked → halloween
+  - SHA-512crypt hash cracked → spaceman
+  - MD5 hash cracked → funforyou
+    
+**Analysis:**

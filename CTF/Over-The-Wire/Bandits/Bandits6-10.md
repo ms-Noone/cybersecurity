@@ -92,6 +92,6 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 **Analysis:**  
 - This challenge reinforce the importance of recognizing encoding pattern and applying the right decoding tools to uncover hidden information
 
-**Password for Level 9:**  
+**Password for Level 10:**  
 `dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 

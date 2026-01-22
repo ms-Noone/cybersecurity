@@ -25,10 +25,10 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
 `7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 
 ## 🔑 Level 12 → Level 13
-**Goal:** Retrieve the password stored in `data.txt` where the file is compressed multiple time using different formats
+**Goal:** Retrieve the password stored in `data.txt` where the file is compressed multiple times using different formats
 
 **Steps:** 
-  - The solution steps will be separated into 3 main task: Setting up temporary directory, revert hexdump and decompressing
+  - The solution steps will be divided into 3 main task: Setting up a temporary directory, revert the hexdump and decompressing the file
 
 <ins>**_Setting Up Temporary Directory_**</ins>
     
@@ -41,24 +41,37 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
    mv data.txt hexdump_data
    ```
 <ins>**_Revert Hexdump File_**</ins>
-1. convert hexdump back into its original binary format: `xdd -r hexdump_data compress_data`  
-   xdd : Command-line tool to create / reverts hexdump file, enable file inspection, debugging, binary patching or ROM hacking
+1. convert hexdump back into its original binary format: `xxd -r hexdump_data compress_data`  
+   xxd : Command-line tool to create / reverts hexdump file, useful for inspection and debugging
    -r : Converts a hex dump back into its original binary format
 
 <ins>**_Decompress File_**</ins>
 1. Inspect the file type: `file compress_data` to reveals compression format
-   <img width="1243" height="36" alt="image" src="https://github.com/user-attachments/assets/78a6a86a-0362-4c7a-88b5-dbd6ee84620a" />
+   <img width="1261" height="56" alt="image" src="https://github.com/user-attachments/assets/a36a101b-520e-4b4d-92f0-bafbef997847" />
 
 2. Iteratively decompress until the original password file is revealed:
    - if gzip:
+     ```
+     mv compress_data compress_data.gz
+     gzip -d compress_data.gz
+     ```
    - if bzip2:
+     ```
+     mv compress_data compress_data.bz2
+     bzip2 -d compress_data.gz
+     ```
    - If tar file:
+     ```
+     mv compress_data compress_data.tar
+     tar -xf compress_data.gz
+     ```
 
-3. Repeat file and decompression until you reach a plain text file
-4. Display final password:
+3. Repeat `file` inspection and decompression until you reach a plain text file
+4. Display final password:  
+   <img width="486" height="54" alt="image" src="https://github.com/user-attachments/assets/38a757cb-12dd-42e1-ba93-356781165ee3" />
 
 **Analysis:**  
-- 
+- Knowing how to peel back each layer in file inspection is critical for uncovering the hidden data
 
-**Password for Level 12:**  
-``  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+**Password for Level 13:**  
+`FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn`  _#Passwords shown are from OverTheWire Bandit and reset periodically_

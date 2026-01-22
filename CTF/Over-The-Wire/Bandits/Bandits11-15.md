@@ -3,6 +3,10 @@ This walkthrough documents my solutions for the OverTheWire Bandit wargame. Band
 
 ## 🔑 Level 11 → Level 12
 **Goal:** Retrieve the password stored in `data.txt` where the password is encoded with ROT13
+```
+ssh bandit11@bandit.labs.overthewire.org -p 2220
+# password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+```
 
 **Steps:**  
 1. After login, list file: `ls`  

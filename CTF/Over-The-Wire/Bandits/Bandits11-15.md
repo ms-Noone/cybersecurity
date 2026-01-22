@@ -17,5 +17,5 @@ This walkthrough documents my solutions for the OverTheWire Bandit wargame. Band
 **Analysis:**  
 - 
 
-**Password for Level 9:**  
+**Password for Level 12:**  
 `7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4`  _#Passwords shown are from OverTheWire Bandit and reset periodically_

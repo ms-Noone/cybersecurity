@@ -75,3 +75,28 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
 
 **Password for Level 13:**  
 `FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+
+## 🔑 Level 13 → Level 14
+**Goal:** Retrieve the password for the next level by using the SSH private key stored in the home directory  
+
+**Steps:**  
+1. After login, list file: `ls`  
+2. `sshkey.private` is listed in the home directory
+3. copy the content of `sshkey.private`
+4. exit ssh and create file `bandit14_sshkey.private` on your local machine
+   ```
+   exit
+   vim bandit14_sshkey.private
+   ```
+5. Paste content copied in step 3 into `bandit14_sshkey.private`
+6. set strict permission on the private key: `chmod 600 nbandit14_sshkey.private`  
+7. ssh using the private key
+   - Command: `ssh -i bandit14_sshkey.private`
+   - Pre-requisite to ssh using private key:  
+     a. Public key is added in the remote server  
+     b. Private key on local machine must have stric permission  
+8. Successful login reveals access to Level 14  
+
+**Analysis:**  
+- This challenge demonstrate the importance of key-based authentication in secure system
+- Proper file permission and least privilege enforcement are critical to prevent unauthorized access to sensitive key

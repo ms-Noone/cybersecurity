@@ -47,4 +47,6 @@ Explore on Hashing functions and their uses in password verification and file in
   - NTLM are vulnerable to offline cracking, recommended to use stronger authentication mechanism like kerberos
 
 # Task 6: Passwrod Cracking
+**Key Takeaways:** 
+  - **Tools:** Hashcat, John the Ripper, Rainbow Table
   - 

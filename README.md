@@ -5,13 +5,14 @@
 ## 🧭 Learning Roadmap
 | TryHackMe Path  | Progres | Room Type | Walkthrough | 
 | ------------- | ------------- | ------------- | ------------- |
-| CyberSecurity101  | 44% | Learning | [Cyber-Security-101](https://github.com/ms-Noone/cybersecurity-portfolio/tree/main/Cyber-Security-101) |
+| CyberSecurity101  | 45% | Learning | [Cyber-Security-101](https://github.com/ms-Noone/cybersecurity-portfolio/tree/main/Cyber-Security-101) |
 
 ---
 ## ⚔️ Challenge / CTF
 | Challenge/CTF  | Walkthrough | 
 | ------------- | ------------- |
 | OverTheWire - Bandits  | [OTW-Bandits](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/Over-The-Wire/Bandits) |
+| TryHackMe - Challenge | [TryHackMe](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/TryHackMe) |
 
 ---
 ## ⚙️ Current Focus

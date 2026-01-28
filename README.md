@@ -15,6 +15,11 @@
 | TryHackMe - Challenge | [TryHackMe](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/TryHackMe) |
 
 ---
+## Python Project
+| Project Title  | Script Link | 
+| ------------- | ------------- |
+| Keylogger | TBD |
+---
 ## ⚙️ Current Focus
 - [ ] TryHackMe - CyberSecurity101
 - [ ] Python Project - Keylogger
@@ -23,11 +28,6 @@
 + CompTIA Security+ (Completed : Credential ID **COMP001022829620**)
 + CompTIA Linux+ (Completed : Credential ID **COMP001022829620**)
 + ISTQB Certified Tester, Foundation Level (Completed : Credential ID **MY0076-13**)
----
-## 🔧Tools & Skills
-- NMAP (Beginner)
-- Wireshark (Beginner)
-- Tcpdump (Beginner)
 ---
 ## 🤝 Let’s Connect
 💼 **LinkedIn:** www.linkedin.com/in/nurainmohdaffandi  

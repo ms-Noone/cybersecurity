@@ -117,5 +117,8 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
 **Password for Level 14:**  
 `8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 
+## 🔑 Level 15 → Level 16
+**Goal:** Retrieve the password for the next level by submitting the current level password to port 30000 on localhost using SSL/TLS encryption
 
+**Steps:**
 

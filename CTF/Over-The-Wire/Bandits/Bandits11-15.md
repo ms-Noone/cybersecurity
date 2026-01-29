@@ -101,5 +101,21 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
 - This challenge demonstrate the importance of key-based authentication in secure system
 - Proper file permission and least privilege enforcement are critical to prevent unauthorized access to sensitive key
 
-**Password for Level 13:**  
+**Password for Level 14:**  
 `MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+
+## 🔑 Level 14 → Level 15
+**Goal:** Retrieve the password for the next level by submitting the current level password to port 30000 on localhost
+
+**Steps:**
+1. Login to bandit14: `ssh -i bandit14_sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`
+2. get the password for bandit14: `cat /etc/bandit_pass/bandit14`
+3. submit the password to localhost: `nc localhost 30000`
+4. paste the password from steps 2
+5. Successful reveals password to Level 15
+
+**Password for Level 14:**  
+`8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+
+
+

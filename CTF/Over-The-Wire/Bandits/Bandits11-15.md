@@ -100,3 +100,6 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
 **Analysis:**  
 - This challenge demonstrate the importance of key-based authentication in secure system
 - Proper file permission and least privilege enforcement are critical to prevent unauthorized access to sensitive key
+
+**Password for Level 13:**  
+`MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS`  _#Passwords shown are from OverTheWire Bandit and reset periodically_

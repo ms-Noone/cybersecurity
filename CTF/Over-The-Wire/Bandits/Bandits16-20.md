@@ -31,7 +31,11 @@ No direct password is revealed — instead, you obtain an SSH private key to acc
 2. list file in the home directory: `ls`
     - Confirmed the presence of `passwords.new` and `passwords.old`
 3. Compare and find the difference between the file: `diff passwords.new passwords.old`
+   <img width="481" height="81" alt="image" src="https://github.com/user-attachments/assets/a3ec6014-e4d6-4d3d-b034-59c493abb79f" />
 4. The output reveals the password to Level 18
 
+**Analysis:**  
+- This challenge demonstrates the importance of change detection - file comparison helps to identify or spot the unauthorized modification or uncover anomalies in log, configuration or datasets
 
 **Password for Level 18:**  
+`x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO`#Passwords shown are from OverTheWire Bandit and reset periodically

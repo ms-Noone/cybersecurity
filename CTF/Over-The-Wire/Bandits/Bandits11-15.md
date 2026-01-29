@@ -129,7 +129,7 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
 1. Login to bandit14: `ssh -i bandit14_sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`
 2. Establish connection using SSL/TLS encryption: `ncat --ssl localhost 30001`
    - `-ssl` → enables SSL/TLS encryption for the connection
-4. paste the password for Level 15 into the netcat session
+4. paste the password for Level 15 into the ncat session
 
 **Analysis:**  
 - Unlike netcat, ncat support TLS/SSL encryption making it suitable for secure communication

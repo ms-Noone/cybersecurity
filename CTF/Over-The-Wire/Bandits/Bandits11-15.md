@@ -110,15 +110,32 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
 **Steps:**
 1. Login to bandit14: `ssh -i bandit14_sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`
 2. get the password for bandit14: `cat /etc/bandit_pass/bandit14`
-3. submit the password to localhost: `nc localhost 30000`
-4. paste the password from steps 2
+3. Establish connection to localhost: `nc localhost 30000`
+4. paste the password from steps 2 into the netcat session
 5. Successful reveals password to Level 15
 
-**Password for Level 14:**  
+**Analysis:**  
+- Netcat operates on both listen and connect mode, in this challenge it is used in connect mode to establish a client session with localhost
+- Netcat does not support TL/SSL encryption, for secure encrypted communication will require other tools such as `ncat` and `openssl`
+- Attacker might misuse Netcat to create a backdoors, therefore it is important to monitor any unusual network activity and investigate suspicious connection
+  
+**Password for Level 15:**  
 `8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
 
 ## 🔑 Level 15 → Level 16
 **Goal:** Retrieve the password for the next level by submitting the current level password to port 30000 on localhost using SSL/TLS encryption
 
 **Steps:**
+1. Login to bandit14: `ssh -i bandit14_sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`
+2. Establish connection using SSL/TLS encryption: `ncat --ssl localhost 30001`
+   - `-ssl` → enables SSL/TLS encryption for the connection
+4. paste the password for Level 15 into the netcat session
+
+**Analysis:**  
+- Unlike netcat, ncat support TLS/SSL encryption making it suitable for secure communication
+- Using encrypted channel is critical to prevent sensitive data from being transmitted in plain text, which attacker can intercept easily
+
+**Password for Level 16:**  
+`kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx`  _#Passwords shown are from OverTheWire Bandit and reset periodically_
+
 

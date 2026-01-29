@@ -19,6 +19,6 @@ ssh -i bandit14_sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
 **Analysis:**  
 - NMAP is a tool that widely used for discovering open ports and services, Analyst can leverage NMAP to identify outdated or vulnerable services that expand the system's attack surface
 
-**Password for Level 16:**  
+**Password for Level 17:**  
 No direct password is revealed — instead, you obtain an SSH private key to access bandit17 as in below
 <img width="600" height="483" alt="image" src="https://github.com/user-attachments/assets/aa5db7a4-8e42-491b-8533-c13002ef9813" />

@@ -91,7 +91,7 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
 5. Paste content copied in step 3 into `bandit14_sshkey.private`
 6. set strict permission on the private key: `chmod 600 nbandit14_sshkey.private`  
 7. ssh using the private key
-   - Command: `ssh -i bandit14_sshkey.private`
+   - Command: `ssh -i bandit14_sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`
    - Pre-requisite to ssh using private key:  
      a. Public key is added in the remote server  
      b. Private key on local machine must have stric permission  

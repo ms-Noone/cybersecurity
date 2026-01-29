@@ -33,6 +33,12 @@ No direct password is revealed — instead, you obtain an SSH private key to acc
 3. Compare and find the difference between the file: `diff passwords.new passwords.old`
    <img width="481" height="81" alt="image" src="https://github.com/user-attachments/assets/a3ec6014-e4d6-4d3d-b034-59c493abb79f" />
 4. The output reveals the password to Level 18
+5. Login to bandit18:
+   ```
+   ssh bandit18@bandit.labs.overthewire.org -p 2220
+   # password: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+   ```
+6. You will see byebye when trying to login to bandit18
 
 **Analysis:**  
 - This challenge demonstrates the importance of change detection - file comparison helps to identify or spot the unauthorized modification or uncover anomalies in log, configuration or datasets

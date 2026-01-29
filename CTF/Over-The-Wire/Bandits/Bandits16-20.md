@@ -22,3 +22,16 @@ ssh -i bandit14_sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
 **Password for Level 17:**  
 No direct password is revealed — instead, you obtain an SSH private key to access bandit17 as in below
 <img width="600" height="483" alt="image" src="https://github.com/user-attachments/assets/aa5db7a4-8e42-491b-8533-c13002ef9813" />
+
+## 🔑 Level 17 → Level 18
+**Goal:** Retrieve the password for the next level by reading the only line in `passwords.new` that is not present in `passwords.old`  
+
+**Steps:**  
+1. Login to bandit17 using the SSH private key obtained from Level 16
+2. list file in the home directory: `ls`
+    - Confirmed the presence of `passwords.new` and `passwords.old`
+3. Compare and find the difference between the file: `diff passwords.new passwords.old`
+4. The output reveals the password to Level 18
+
+
+**Password for Level 18:**  

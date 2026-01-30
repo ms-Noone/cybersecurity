@@ -13,12 +13,6 @@
 | ------------- | ------------- |
 | OverTheWire - Bandits  | [OTW-Bandits](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/Over-The-Wire/Bandits) |
 | TryHackMe - Challenge | [TryHackMe](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/TryHackMe) |
-
----
-## Python Project
-| Project Title  | Script Link | 
-| ------------- | ------------- |
-| Keylogger | TBD |
 ---
 ## ⚙️ Current Focus
 - [ ] TryHackMe - CyberSecurity101

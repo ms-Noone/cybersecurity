@@ -45,3 +45,39 @@ No direct password is revealed — instead, you obtain an SSH private key to acc
 
 **Password for Level 18:**  
 `x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO`#Passwords shown are from OverTheWire Bandit and reset periodically
+
+## 🔑 Level 18 → Level 19
+**Goal:** Retrieve the password for the next level in a file _**readme**_ despite restricted login conditions where someone has modified .bashrc to log you out when you log in with SSH  
+
+**Steps:**  
+1. Login to bandit18: `ssh bandit18@bandit.labs.overthewire.org -p 2220 -t /bin/sh`
+   - `-t /bin/sh` → tell ssh to run pseudo-terminal immediately after connecting instead of default shell configured in .bashrc
+2. list file in the directory: `ls`
+   - Confirmed the presence of readme file
+3. Retrieve the password from readme file: `cat readme`  
+   <img width="427" height="36" alt="image" src="https://github.com/user-attachments/assets/e3ad68c5-fb6c-40c1-9328-baec837ebee1" />
+
+**Analysis:**  
+- This challenge demonstrates how attacker could leverage .bashrc to restrict or manipulate user interaction on a login shell
+- Its also highlight the importance of understanding SSH invocation methods, both for detecting misuse and for maintain legitimate access in restricted environment
+
+**Password for Level 19:**  
+`cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8`#Passwords shown are from OverTheWire Bandit and reset periodically
+
+## 🔑 Level 19 → Level 20
+**Goal:** Retrieve the password for the next level by using the setuid binary 
+
+**Steps:**  
+1. Login to bandit19: `ssh bandit19@bandit.labs.overthewire.org -p 2220`  
+2. list file to see the permission in the home directory: `ls -l`  
+   - Confirmed that `bandit20-do` have special permission (suid) :
+     <img width="574" height="50" alt="image" src="https://github.com/user-attachments/assets/22b750c8-95b9-405c-80e9-20b10ef48230" />
+3. list file permission for /etc/bandit_pass/bandit20: `ls -l /etc/bandit_pass/bandit20`
+   <img width="596" height="36" alt="image" src="https://github.com/user-attachments/assets/bd52c0ba-de68-4d19-b060-d4a25b91c9c2" />
+4. Retrieve password by run the command as bandit20:  
+   <img width="528" height="40" alt="image" src="https://github.com/user-attachments/assets/c6376347-cc79-4c4f-9c5d-f85af26daeb7" />
+
+**Analysis:**  
+
+**Password for Level 20:**  
+`0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO`#Passwords shown are from OverTheWire Bandit and reset periodically

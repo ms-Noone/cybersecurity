@@ -14,6 +14,9 @@
 | OverTheWire - Bandits  | [OTW-Bandits](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/Over-The-Wire/Bandits) |
 | TryHackMe - Challenge | [TryHackMe](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/TryHackMe) |
 ---
+## Home Lab  
+Checkout my penetration testing home lab setup [here](https://github.com/ms-Noone/cybersecurity/tree/main/Home%20Lab)
+
 ## ⚙️ Current Focus
 - [ ] TryHackMe - CyberSecurity101
 - [ ] Python Project - Keylogger

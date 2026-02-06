@@ -7,4 +7,11 @@ This home lab project is design to replicate a small enterprise environment for 
 
 The lab is hosted on Oracle Virtual Box, with all virtual machines connected through a Nat Network. This configuration to ensure the lab remains isolated and protected from external network exposure.
 
+## Component
 TBD...
+
+## How to Setup The Homelab
+TBD...
+
+## Reports
+TBD

@@ -12,5 +12,5 @@ The lab is hosted on Oracle Virtual Box, with all virtual machines connected thr
 ## Component
 TBD...
 
-## Reports
+## Exploitation
 TBD

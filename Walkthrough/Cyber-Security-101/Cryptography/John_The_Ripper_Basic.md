@@ -118,12 +118,32 @@ Explore how to use John The Ripper, a powerful and adaptable hash‑cracking too
 - It is important to run internal password audit with custom rules to identify weak credential before an attacker do
 - custom rules simulate real-world password creation habits, making cracking more effective and password audits more realistic
 
-## Cracking Password Protected Zip Files
+## Task 9: Cracking Password Protected Zip Files
 - Command: `zip2john [options] [zip file] > [output file]`
   - `[options]`: Allow to pass specific checksum option to Zip2John, this shouldnt often be necessary
   - `>`: Redirect output from this command to another file
 
 **Process:**
+1. Convert Zip file into hash format: `zip2john secure.zip > secure_hash.txt`
+2. Crack the value of secure_hash.txt : `john --wordlist=/usr/share/wordlists/rockyou.txt secure_hash.txt`
+   <img width="1006" height="162" alt="image" src="https://github.com/user-attachments/assets/2df0c65c-ab6d-4a59-8c92-1e5baf181f6a" />
+
+## Task 10: Cracking Password-Protected RAR Archives
+- Command: `rar2john [rar file] > [output file]`
+
+**Process:**
+1. Convert Zip file into hash format: `rar2john secure.rar > secure_hash.txt`
+2. Crack the value of secure_hash.txt : `john --wordlist=/usr/share/wordlists/rockyou.txt secure_hash.txt`
+    <img width="985" height="178" alt="image" src="https://github.com/user-attachments/assets/a54e71a1-7c6d-4763-b8a3-3071bda59c31" />
+
+## Task 11: Cracking SSH Keys with John
+- Command: `ssh2john [id_rsa private key file] > [output file]`
+  - `[id_rsa private key file]` : path to the id_rsa file you wish to get the hash of
+
+**Process:**
+1. Convert Zip file into hash format: `ssh2john id_rsa > id_rsa_hash.txt`
+2. Crack the value of secure_hash.txt : `john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa_hash.txt`
+   <img width="1058" height="218" alt="image" src="https://github.com/user-attachments/assets/1dcd828c-ed1e-49c0-8efa-f6a2515270f1" />
 
 
 

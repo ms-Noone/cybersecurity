@@ -110,6 +110,22 @@ Explore how to use John The Ripper, a powerful and adaptable hash‑cracking too
 - Enforce password policy that prohibit username-based password and encourage complexities
 
 ## Task 8: Custom Rules
+**Key Takeaways:** 
+- Custom rule defined in `john.conf` located in `/etc/john/`
+- Command: `john --wordlist=[path to wordlist] --rule=PoloPassword [path to file`
+
+**Security Perspective:**
+- It is important to run internal password audit with custom rules to identify weak credential before an attacker do
+- custom rules simulate real-world password creation habits, making cracking more effective and password audits more realistic
+
+## Cracking Password Protected Zip Files
+- Command: `zip2john [options] [zip file] > [output file]`
+  - `[options]`: Allow to pass specific checksum option to Zip2John, this shouldnt often be necessary
+  - `>`: Redirect output from this command to another file
+
+**Process:**
+
+
 
 
 

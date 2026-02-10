@@ -28,6 +28,3 @@ The following techniques were used during assessment:
 2. Exploitation
    - Leveraged Metasploit Framework to exploit discovered vulnerabilities
    - Validated successful compromise of the target system
-
-## Report
-TBD

@@ -69,7 +69,7 @@ No direct password is revealed — instead, you obtain an SSH private key to acc
 
 **Steps:**  
 1. Login to bandit19: `ssh bandit19@bandit.labs.overthewire.org -p 2220`  
-2. list file to see the permission in the home directory: `ls -l`  
+2. list file to see the setuid binary in the home directory: `ls -l`  
    - Confirmed that `bandit20-do` have special permission (suid) :
      <img width="574" height="50" alt="image" src="https://github.com/user-attachments/assets/22b750c8-95b9-405c-80e9-20b10ef48230" />
 3. list file permission for /etc/bandit_pass/bandit20: `ls -l /etc/bandit_pass/bandit20`
@@ -77,7 +77,25 @@ No direct password is revealed — instead, you obtain an SSH private key to acc
 4. Retrieve password by run the command as bandit20:  
    <img width="528" height="40" alt="image" src="https://github.com/user-attachments/assets/c6376347-cc79-4c4f-9c5d-f85af26daeb7" />
 
-**Analysis:**  
-
 **Password for Level 20:**  
 `0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO`#Passwords shown are from OverTheWire Bandit and reset periodically
+
+## 🔑 Level 20 → Level 21
+**Goal:** Retrieve the password for the next level by connecting to localhost on the specified port. The service reads a line of text from the connection and compares it to the password from the previous level (bandit20). If the password is correct, it transmits the password for the next level (bandit21).  
+
+**Steps:**  
+1. Login to bandit20: `ssh bandit20@bandit.labs.overthewire.org -p 2220`
+2. list file to see the setuid binary in the home directory: `ls -l`  
+   - Confirmed that `suconnect` is a file with priviledge escalation
+3. setup a listener by send it the password of bandit20: `echo -n "0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO" | ncat -l -p 1234 &`
+4. connect to the localhost with the specified port: `suconnect localhost 1234`
+5. The service validates the password and returns the password for Level 21
+   <img width="790" height="84" alt="image" src="https://github.com/user-attachments/assets/9edc78ea-b096-4a87-95cf-03e2a74f1ac4" />
+
+**Analysis:**  
+- This challenge demonstrate the basic of setting up listener and handling simple client-server communication.
+- It also highlight the importance of carefully designing SUID program and network service since improper handling may leak sensitive information or enable priviledge escalation
+
+**Password for Level 21:**  
+`EeoULMCra2q0dSkYj561DX7s1CpBuOBt`#Passwords shown are from OverTheWire Bandit and reset periodically
+ 

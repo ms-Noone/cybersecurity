@@ -21,11 +21,23 @@ ssh bandit21@bandit.labs.overthewire.org -p 2220
 **Analysis:**  
 This exercise demonstrates how a lower‑privileged user can access secrets when a cronjob writes sensitive data into a file with overly permissive access rights
 
-**Password for Level 22c:**  
+**Password for Level 22:**  
 `tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q`#Passwords shown are from OverTheWire Bandit and reset periodically
 
-## 🔑 Level 21 → Level 22
-**Goal:** 
+## 🔑 Level 22 → Level 23
+**Goal:** Retrieving the password for the next level (bandit23) from a program that is automatically executed by cron
 
 **Steps:**
+1. Login using SSH command: `ssh bandit22@bandit.labs.overthewire.org -p 2220`
+2. Check what command being executed by cron: `cat /etc/cron.d/cronjob_bandit23`
+3. Inspect the script content of script been run by cronjob: `cat /usr/bin/cronjob_bandit23.sh`
+   <img width="639" height="146" alt="image" src="https://github.com/user-attachments/assets/8581c11c-34b0-4e74-8bd4-8a98aa209d52" />
+4. Run the command from step 3 output manually to get the password filename:
+   <img width="662" height="31" alt="image" src="https://github.com/user-attachments/assets/49f693ba-bd79-4513-95aa-fd5626a3e316" />
+5. Retrieve password from the output file mention in step 4: `cat /tmp/8ca319486bfbbc3663ea0fbe81326349`
+   <img width="642" height="33" alt="image" src="https://github.com/user-attachments/assets/a76f260e-3f4e-429f-bc21-23107796f474" />
 
+**Password for Level 23:**  
+`0Zf11ioIjMVN551jX3CmStKLYqjk54Ga`#Passwords shown are from OverTheWire Bandit and reset periodically
+
+## 🔑 Level 23 → Level 24

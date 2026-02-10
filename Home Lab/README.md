@@ -28,3 +28,6 @@ The following techniques were used during assessment:
 2. Exploitation
    - Leveraged Metasploit Framework to exploit discovered vulnerabilities
    - Validated successful compromise of the target system
+
+## Walkthrough
+[Metasploitable2_Walkthrough](https://github.com/ms-Noone/cybersecurity/blob/main/Home%20Lab/Metapsploitable2_Walkthrough.md)

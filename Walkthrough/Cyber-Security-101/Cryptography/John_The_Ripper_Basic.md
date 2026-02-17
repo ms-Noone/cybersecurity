@@ -141,8 +141,8 @@ Explore how to use John The Ripper, a powerful and adaptable hash‑cracking too
   - `[id_rsa private key file]` : path to the id_rsa file you wish to get the hash of
 
 **Process:**
-1. Convert Zip file into hash format: `ssh2john id_rsa > id_rsa_hash.txt`
-2. Crack the value of secure_hash.txt : `john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa_hash.txt`
+1. Convert ssh file into hash format: `ssh2john id_rsa > id_rsa_hash.txt`
+2. Crack the value of id_rsa_hash.txt : `john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa_hash.txt`
    <img width="1058" height="218" alt="image" src="https://github.com/user-attachments/assets/1dcd828c-ed1e-49c0-8efa-f6a2515270f1" />
 
 

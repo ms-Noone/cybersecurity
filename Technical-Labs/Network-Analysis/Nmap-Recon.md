@@ -11,10 +11,12 @@ This project documents the application of Nmap for host discovery and service au
 ## 📝 Phase 1: Enumeration
 ### _1.1 Host Discovery_
 **<ins>Commands:</ins>**  
-`nmap -sn  192.168.0.1/27`       # Discover live host without probing services  
-`nmap -sL  192.168.0.1/27`    # List target without actually scanning them  
+`nmap -sn  192.168.0.1/27`        
 
-<img width="758" height="591" alt="list-live-host" src="https://github.com/user-attachments/assets/a56ed65d-18b1-46f3-8844-79326a76bc57" />
+**Purpose:**  
+Discover live host without probing services and without triggering heavy security alerts
+
+<img width="558" height="73" alt="image" src="https://github.com/user-attachments/assets/5b2b9dcd-7b36-4995-b6f2-0311c89da84b" />
 
 **Result:**  
 Identified **32 active hosts** in subnet
@@ -22,12 +24,15 @@ Identified **32 active hosts** in subnet
 **Analysis:**  
 Enumerating devices is the first step in network reconnaisance. This process helps analyst establish baseline visibility, identify potential attack surface and prioritize systems for security assessment
 
-## 📝Task 3: Port Scanning - Who is Listening
+### _1.2 Service Auditing & Attack Surface Identification_
 **<ins>Command:</ins>**  
-`nmap -sT 10.49.175.47`       # TCP connect scan - complete three-way handshake  
+`nmap -sT -p- 10.48.167.166`       # TCP connect scan - complete three-way handshake  
 
-<img width="631" height="250" alt="port-scanning" src="https://github.com/user-attachments/assets/e2c5f501-91f0-440a-843d-97d9a5a13872" />
-	
+**Purpose:**  
+Connect scan by complete the TCP three-way handshake with every target TCP port 
+
+<img width="580" height="247" alt="image" src="https://github.com/user-attachments/assets/f84d0741-9dc3-4ab0-bdce-e0602db3eb75" />
+
 **Result:**  
 Found **6 open ports**: 7 (ECHO), 9 (Discard), 13 (Daytime), 17(QOTD) , 22 (SSH), 8008 (HTTP)
 	
@@ -41,15 +46,15 @@ Found **6 open ports**: 7 (ECHO), 9 (Discard), 13 (Daytime), 17(QOTD) , 22 (SSH)
  - Patch web service to mitigate exploitation risk
  - Harden SSH with strong authentication
 
-## 📝Task 4: Version Detection – Extract More Information
+### _1.3 Deep Dive: Version Detection & CVE Mapping_
 **<ins>Command:</ins>**  
-`nmap -sS -sV 10.48.153.79` #TCP Syn with Service version detection
+`nmap -sS -sV -O 10.48.167.166`
 
-<img width="861" height="215" alt="Version-detection" src="https://github.com/user-attachments/assets/bb673248-5e82-4d6f-8d86-6697cebdf3e0" />  
+**Purpose:**  
+To discover Service, Version and OS detection, or we can also change it to `-A` which enables OS detection, version scanning, and traceroute, among other things  
 
-`nmap -sS -O 10.48.153.79` #TCP Syn with OS fingerprinting
+<img width="1395" height="906" alt="image" src="https://github.com/user-attachments/assets/07665819-6e60-4b59-9751-c7de20d9575c" />
 
-<img width="826" height="358" alt="OS-fingerprinting" src="https://github.com/user-attachments/assets/889a53a9-92fa-4931-a48d-e9487dce9e36" />  
 
 **Result:**  
 Detected 3 outdated services and a legacy OS: 
@@ -66,41 +71,24 @@ Version detection identified outdated and vulnerable services that expand the sy
  - Priotizing OpenSSH patching update
  - Migrate frim Linux kernel 4.15 to a supported or latest version to ensure ongoing security updates
 
-## 📝Task 5: Timing - How Fast is Fast  
-**Concepts Learned:**  
-NMAP provides timing templates that can control scan speed and stealth  
-| Timing | Use Case | SOC Impact |  
-|--------|----------|------------|  
-| T0 (Paranoid) | Extremely slow | Avoids detection, impractical for large scans |  
-| T1 (Sneaky)   | Very slow | Minimizes IDS alerts |  
-| T3 (Normal)   | Default | Balanced speed vs detection risk |  
-| T4 (Aggressive) | Fast | Useful internally, may trigger alerts |  
-| T5 (Insane)   | Very fast | Likely detected, for troubleshooting only | 
+## 📝 Phase 2: Real-World Lab Application (Metasploitable 2)
 
-**Application example:**  
-Used -T0 or -T1 to evade from detection during reconnaisance, Analyst can also apply these templates to test the specific firewall rule and observe how different speed affect IDS/IPS responses
+To practice these techniques, I ran a targeted scan against a Metasploitable2 VM in my home lab. This exercise focuses on service and version detection, along with mapping vulnerabilities to known CVEs using the Nmap Scripting Engine(NSE)  
 
-## 📝Task 6: Output – Controlling What You See
-**Concepts Learned:**  
-  - NMAP provides switches that help to Analyst to control scan output
-    | Option  | Description |
-	| ------------- | ------------- |
-	| -v | Provide real-time details about scan progress |
-    | -d | Useful for troubleshooting when NMAP not behaving as expected (intended for developer) |
-	| -oN filename |	Save Scan Report to Normal Output |
-	| -oX filename |	Save Scan Report to XML Output |
-	| -oG filename |	Save Scan Report to grep-able output |
-	| -oA filename |	Save Scan Report to output in all major format (.nmap, .gnamp, .xml) |
+**<ins>Command:</ins>**  
+`nmap -sV -sC --script vuln -oN blue.nmap 192.168.1.5`
 
-**Application example:**  
-Using the -v option helps analyst gain real-time visibility of scan process, this is valuable during long or complex scan.The `-oA` option is valuable for saving results in multiple formats, supporting incident documentation and further analysis in SOC workflows.
+**Finding:**  
+- Identify around ~23 open port, one of it is **vsftpd 2.3.4** running on port 21
+- The scan output flagged CVE-2011-2523 for this service. Cross-referencing with Exploit-DB confirmed that this version contains Backdoor Vulnerability(CVE-2011-2523). This allows an attacker to spawn a shell by sending a username ended with :)
+
+ **Remediation:** 
+ - Isolate the vulnerable host and apply the relevant patch, or migrate to SSH File Transfer Protocol (SFTP) which provide secure file transfer over an encrypted channel
+ - Implement firewall rule to restrict port 21 access to authorized IPs address only
 
 ## 📝 Key Takeways
-NMAP is one of the most widely used tools in Reconnaissance, This lab reinforced how analyst can:
-- Enumerate hosts and services to establish baseline visibility.
-- Identify outdated or vulnerable software linked to CVEs.
-- Balance stealth and efficiency using timing templates.
-- Document findings in multiple formats for SOC workflows
+- NMAP is not just a scanner, it is a tools that we use for reconnaissance to gather info and identify vulnerabilites
+- Utilizing the -oA flag ensures that scan results are preserved in XML, Grepable, and Normal formats, which is essential for audit trails and incident response
 
 
 

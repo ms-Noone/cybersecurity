@@ -8,4 +8,3 @@ This repository documents my step-by-step solutions, commands used, and key lear
 | CTF  | Description | Walkthrough | 
 | ------------- | ------------- | ------------- |
 | Over The Wire - Bandits  | Beginner-level Linux and security basics | [OTW-Bandits](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/Over-The-Wire/Bandits) |
-| Try Hack Me | Easy-level challenge | [TryHackme](https://github.com/ms-Noone/cybersecurity/tree/main/CTF/TryHackMe)

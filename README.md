@@ -29,6 +29,5 @@ Checkout my penetration testing home lab setup [here](https://github.com/ms-Noon
 ## 🤝 Let’s Connect
 💼 **LinkedIn:** www.linkedin.com/in/nurainmohdaffandi  
 📧 **Email:** ainaffandi@gmail.com  
-![tryhackme stats](https://raw.githubusercontent.com/ainaffandi/ainaffandi/master/assets/thm_propic.png)
 
 ⭐ *Thanks for visiting my portfolio! Follow my journey as I continue learning and building hands-on cybersecurity projects.*   

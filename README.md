@@ -13,7 +13,6 @@ Checkout my penetration testing home lab setup [here](https://github.com/ms-Noon
 
 ## ⚙️ Current Focus
 - [ ] TryHackMe - CyberSecurity101
-- [ ] Python Project - Keylogger
 ---
 ## 📜 Certifications in Progress
 + CompTIA Security+ (Completed : Credential ID **COMP001022829620**)

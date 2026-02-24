@@ -90,6 +90,6 @@ To practice these techniques, I ran a targeted scan against a Metasploitable2 VM
 - NMAP is not just a scanner, it is a tools that we use for reconnaissance to gather info and identify vulnerabilites
 - Utilizing the -oA flag ensures that scan results are preserved in XML, Grepable, and Normal formats, which is essential for audit trails and incident response
 
-
-
+ **Cheatsheet:**  
+Refer this [cheatsheet](https://github.com/ms-Noone/cybersecurity/blob/main/Cheatsheet/NMAP.md) for other usefull command in Nmap
 

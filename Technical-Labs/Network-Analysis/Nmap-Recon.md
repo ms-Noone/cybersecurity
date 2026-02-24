@@ -1,15 +1,15 @@
-# NMAP – TryHackMe Walkthrough
+# NMAP – Network Reconnaissance & Vulnerability Discovery
 
-Room : [NMAP The Basic](https://tryhackme.com/room/nmap)  
-Date Completed: Dec 31, 2025  
-Category: Networking  
-Focus Areas: NMAP  
-
+**Category:** Network Security / Offensive Operations  
+**Lab Environment:** TryHackMe & Home Lab (Metasploitable 2)  
+**Focus Areas:** Service Enumeration, Scripting Engine (NSE), and Vulnerability Mapping
+  
 ## 📝 Overview
 
-Hands-on lab focused on Nmap fundamentals — host discovery, port scanning, and service version detection. Objective was to practice reconnaissance techniques connect findings to vulnerability assessment in SOC workflows
+This project documents the application of Nmap for host discovery and service auditing. The objective was to move beyond simple port scanning to perform vulnerability mapping by correlating service versions with known CVEs (Common Vulnerabilities and Exposures).  
 
-## 📝 Task 2: Host Discovery – Who is Online
+## 📝 Phase 1: Enumeration
+### _1.1 Host Discovery_
 **<ins>Commands:</ins>**  
 `nmap -sn  192.168.0.1/27`       # Discover live host without probing services  
 `nmap -sL  192.168.0.1/27`    # List target without actually scanning them  

@@ -19,3 +19,6 @@ This lab demonstrates the use of password-cracking tools to audit password stren
     - `unshadow` command: `unshadow local_passwd local_shadow > unshadowed.txt`
     
 2. Initiate John and feed the `unshadow` output to crack the password
+   - **Command:** `john --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt unshadowed.txt`
+
+## 🛠️ Scenario 2: Encrypted Archive Analysis

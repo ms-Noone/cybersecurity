@@ -80,7 +80,7 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
    vim bandit14_sshkey.private
    ```
 5. Paste content copied in step 3 into `bandit14_sshkey.private`
-6. set strict permission on the private key: `chmod 600 nbandit14_sshkey.private`  
+6. set strict permission on the private key: `chmod 600 bandit14_sshkey.private`  
 7. ssh using the private key
    - Command: `ssh -i bandit14_sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`
    - Pre-requisite to ssh using private key:  

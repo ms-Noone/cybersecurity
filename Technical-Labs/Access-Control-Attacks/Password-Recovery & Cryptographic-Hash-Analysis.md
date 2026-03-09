@@ -35,6 +35,11 @@ Hashcat cant see inside file format like ZIP files, RAR files, PDF files or SSH 
    - **Command:** `hashcat -m 17210 -a 0 secure_hash.txt /usr/share/wordlists/rockyou.txt`
    - Beside hashcat, you can also use JtR to crack the password. Here is the **Command:** `john --wordlist=/usr/share/wordlists/rockyou.txt secure_hash.txt`
   
+## Online Password-Cracking Tools
+1. [CrackStation](https://crackstation.net/) - Online password hashed cracker
+2. [HashID](https://hashes.com/en/tools/hash_identifier) - Hash type identifier
+3. [Hash Mode](https://hashcat.net/wiki/doku.php?id=hashcat) - Hash mode identifier
+  
 ## Key Takeways
 - The effectiveness of the Dictionary Attack using rockyou.txt list highlights the critical need for password complexity and length to resist automated attacks.
 - Unauthorized access to /etc/shadow is a major red flag. SOC teams should monitor for any unauthorized access to this file as it often precedes a full system compromise.
